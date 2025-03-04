@@ -9,7 +9,7 @@ class DatabaseExceptionTest {
         DatabaseException exception = new DatabaseException("Database error occurred");
         assertEquals("Database error occurred", exception.getMessage());
     }
-
+    
     @Test
     void testDatabaseExceptionWithMessageAndCause() {
         Throwable cause = new RuntimeException("SQL Error");
